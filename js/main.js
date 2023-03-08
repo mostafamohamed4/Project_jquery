@@ -51,12 +51,9 @@ function countdown() {
     s = (s < 10) ? "0" + s : s;
 
     document.getElementById("days").innerHTML = "<h3>" + d + " D" + "</h3>";
-    document.getElementById("days").innerHTML = "<h3>" + d + " D" + "</h3>";
-
     document.getElementById("hours").innerHTML = "<h3>" + h + " h" + "</h3>";
     document.getElementById("minutes").innerHTML = "<h3>" + m + " m" + "</h3>";
     document.getElementById("seconds").innerHTML = "<h3>" + s + " s" + "</h3>";
-
     setTimeout(countdown, 1000);
 }
 
@@ -80,7 +77,6 @@ $(function () {
     $("textarea").keyup(function () {
         var length = $(this).val().length;
         var character = max - length;
-        console.log(character)
         if (character <= 0) {
             $("#char").text("your available character finished");
         } else {
